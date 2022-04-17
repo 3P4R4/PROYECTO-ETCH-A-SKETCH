@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto ETCH-SKETCH</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="Contenedor">
+      <h1>Proyecto ETCH-SKETCH</h1>
+      <div id="contenedorCanvas">
+        <canvas id="lienzo" width="600" height="600"></canvas>
+      </div>
+      <div id="herramientas">
+        Color: <input type="color" id="color" oninput="elColor(this.value);"/>
+        Grosor: <input type="range" id="grosor" oninput="elGrosor(this.value);" min="1" max="5" value="1">
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
